@@ -1,0 +1,30 @@
+getBoundingClientRect() -> retorna um array com largura, altura, distancia do elemento e do topo da pagina e todas as dimensoes referentes aos outro elementos.
+offsetTop -> distancia do topo da pag e o começo do elemento.
+offsetLeft -> distancia da margin esquerdan da pag para o começo da pagina.
+pageYOffset -> é a distancia que a barra de scroll está no eixo Y em relação ao topo da página.
+
+O ideal para verificar o tamanho da tela do browser nao é o innerWidth, mas o matchMedia() que é a mesma coisa que o media querie.
+const small = window.matchMedia('(max-width: 600px)');
+const small = window.matchMedia('(max-width: 600px)').matches; // retorna true ou false
+
+offsetWidth -> vai pegar a borda da img tb
+
+EVENTOS
+
+currentTarget - e o elemento que esta chamando o evento.
+target - e exatamemte o elemento que sofreu o evento.
+o this por default sempre vai fazer referencia ao currentTarget
+para "pega" o elemento html usamos: document.documentElement
+
+Transversing -> navegar pelo dom utilizando suas propriedades e metodos.
+
+Element VS Node -> elements é um tipo de node. O element representa um html. Node representa um nó e pode ser um elemento, texto, comentario, quebra de linhas e etc... 
+
+cloneNode -> clona um elemento, se passarmos o parametro true ele clona os filhos do elemento tb.
+Ex: const cloneTitulo = titulo.cloneNode(true)
+
+
+
+
+
+
