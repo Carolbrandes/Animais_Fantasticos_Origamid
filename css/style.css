@@ -220,11 +220,13 @@ body{
 }
 
 
-.js .js-tabcontent section{
+
+
+.js [data-tab="content"] section{
     display: none;
 }
 
-.js-tabcontent section.ativo{
+[data-tab="content"] section.ativo{
     display: block;
     animation: show .5s forwards;
 }
@@ -243,20 +245,20 @@ body{
     }
 }
 
-.js .js-accordion dd{
+.js [data-accordion] dd{
     display: none;
 }
 
-.js-accordion dt::after{
+[data-accordion] dt::after{
     content: '⮧';
     margin-left: 10px;
 }
 
-.js-accordion dt.ativo::after{
+[data-accordion] dt.ativo::after{
     content: '⮥';
 }
 
-.js-accordion dd.ativo{
+[data-accordion] dd.ativo{
     display: block;
     animation: slideDown .5s forwards;
 }
@@ -274,14 +276,13 @@ body{
     }
 }
 
-.js .js-scroll{
+.js [data-tab="scroll"]{
     opacity: 0;
     transform: translate3d(-30px, 0, 0);
     transition: .3s;
 }
 
-.js .js-scroll.ativo{
+.js [data-tab="scroll"].ativo{
     opacity: 1;
    transform: translate3d(0, 0, 0); 
 }
-

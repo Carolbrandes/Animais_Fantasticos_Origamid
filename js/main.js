@@ -6,8 +6,8 @@ initAnimacaoScroll();
 
 // para fazer a navegacao entre a img dos animais e o texto referente a cada animal
 function initTabNav() {
-    const tabMenu = document.querySelectorAll('.js-tabmenu li');
-    const tabContent = document.querySelectorAll('.js-tabcontent section');
+    const tabMenu = document.querySelectorAll('[data-tab="menu"] li');
+    const tabContent = document.querySelectorAll('[data-tab="content"] section');
 
     // só será executado se os elementos existirem na pagina
     if (tabMenu.length && tabContent.length) {
@@ -36,7 +36,7 @@ function initTabNav() {
 
 // accordion para section faq
 function initAccordion() {
-    const accordionList = document.querySelectorAll('.js-accordion dt');
+    const accordionList = document.querySelectorAll('[data-accordion] dt');
     const ativo = 'ativo';
 
     if (accordionList.length) {
@@ -55,7 +55,7 @@ function initAccordion() {
 
 // navegacao do menu
 function initScrollSuave() {
-    const linksInternos = document.querySelectorAll('.js-menu a[href^="#"]');
+    const linksInternos = document.querySelectorAll('[data-menu] a[href^="#"]');
     linksInternos.forEach(link => link.addEventListener('click', scrollToSection));
 
     function scrollToSection(event) {
@@ -83,7 +83,7 @@ function initScrollSuave() {
 }
 
 function initAnimacaoScroll() {
-    const sections = document.querySelectorAll('.js-scroll');
+    const sections = document.querySelectorAll('[data-tab="scroll"]');
 
     if (sections.length) {
         const windowMetade = window.innerHeight * 0.5;
@@ -106,5 +106,3 @@ function initAnimacaoScroll() {
     }
 
 }
-
-
