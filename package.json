@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-   "build": "webpack --mode production js/main.js --output ./index.js",
-   "dev": "webpack --mode development --watch  js/main.js --output ./index.js"
+    "build": "webpack --mode production",
+    "dev": "webpack --mode development --watch "
   },
   "repository": {
     "type": "git",
@@ -19,10 +19,17 @@
   },
   "homepage": "https://github.com/Carolbrandes/Animais_Fantasticos_Origamid#readme",
   "devDependencies": {
+    "@babel/cli": "^7.10.5",
+    "@babel/core": "^7.11.1",
+    "@babel/preset-env": "^7.11.0",
     "eslint": "^7.7.0",
     "eslint-config-airbnb-base": "^14.2.0",
     "eslint-plugin-import": "^2.22.0",
     "webpack": "^4.44.1",
     "webpack-cli": "^3.3.12"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.10.4",
+    "whatwg-fetch": "^3.4.0"
   }
 }

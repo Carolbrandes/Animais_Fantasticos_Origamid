@@ -12,3 +12,5 @@
    "build": "webpack --mode production  js/main.js --output ./index.js "
    para ativar: npm run build
 
+   5) vamos criar o arquivo de configuracao: webpack.config.js
+
