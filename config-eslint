@@ -1,0 +1,6 @@
+criar arquivo package.json
+eslint --init
+
+How Would you like to configure ESlint? User a popular style guide
+Wich style guide do u want to follow? Airbnbn
+

@@ -1,0 +1,14 @@
+1) instalar a webpack:  npm i --save-dev webpack webpack-cli
+2) como usar a webpack (sem configuracao): npx webpack ./js/script.js  --output ./main.js
+ ./js/script.js -> arquivo q sera transformado
+  ./main.js -> arquivo transformado
+
+  Obs: o npx vai la na pasta node_modules> bin
+
+  3) para esse comando ficar rodando sempre usamos a flag --watch:
+   npx webpack ./js/script.js  --output ./main.js --watch
+
+   4) para nao ter ficar dando esse comando podemos no package.json colocar um script  que faz essa funcionalidade.
+   "build": "webpack --mode production  js/main.js --output ./index.js "
+   para ativar: npm run build
+

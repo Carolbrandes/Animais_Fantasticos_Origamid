@@ -1,0 +1,28 @@
+{
+  "name": "animaisFantasticos",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+   "build": "webpack --mode production js/main.js --output ./index.js",
+   "dev": "webpack --mode development --watch  js/main.js --output ./index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Carolbrandes/Animais_Fantasticos_Origamid.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Carolbrandes/Animais_Fantasticos_Origamid/issues"
+  },
+  "homepage": "https://github.com/Carolbrandes/Animais_Fantasticos_Origamid#readme",
+  "devDependencies": {
+    "eslint": "^7.7.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-plugin-import": "^2.22.0",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12"
+  }
+}
